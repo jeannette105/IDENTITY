@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', 'sans serif';
+}
+
+body {
+    background-image: linear-gradient(to right, #f78ca0 0%, #f99e74 19%, #fd868c 60%, #fe9a8b 100%);
+}
+
+.identité {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 217, 165);
+    height: 80vh;
+    width: 50%;
+    margin-top: 60px;
+    margin-left: 300px;
+    border: 5px solid rgb(68, 23, 6);
+    border-radius: 16px ;
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.192);
+}
+
+.person {
+    left: 0;
+    width: 200px;
+    height: 99%;
+    width: 60%;
+    color: rgb(68, 23, 6);
+}
+h1 {
+    text-align: center;
+    margin-top: 60%;
+    font-size: 30px;
+}
+h5 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-right: 80px;
+    gap: 15px;
+    margin-top: 30px;
+    width: auto;
+}
+
+.FOL {
+    font-size: 14px;
+    padding: 10px;
+    font-weight: bold;
+    color:  rgb(68, 23, 6) ;
+    border: 2px solid rgb(68, 23, 6);
+    border-radius: 100px ;
+}
+.MES {
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+    color:  rgb(68, 23, 6) ;
+    border: 2px solid rgb(68, 23, 6);
+    border-radius: 100px ;
+}
+
+.suivi {
+    display: grid;
+    grid-template-rows: 3;
+    width: 40%;
+    gap: 2px;
+}
+
+.follow {
+    background-color: rgb(68, 23, 6);
+    color: aliceblue;
+    text-align: center;
+}
+
+.likes {
+    background-color: rgb(68, 23, 6);
+    color: aliceblue;
+}
+
+.followers {
+    background-color: rgb(68, 23, 6);
+    color: aliceblue;
+}
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+}
+p {
+    text-align: center;
+    font-weight: 200;
+}
+
+.cercle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: absolute;
+    margin-left: 80px;
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    border: 2px solid #201e3a;
+    position: absolute;
+    border-radius: 100px;
+    border-radius: 100px 100px 100px 0;
+    border-bottom: 0;
+    border-left: 0;
+    margin-top: 15px;
+    margin-left: 16px;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.clear {
+    width: 165px;
+    height: 165px;
+    border: 2px solid #ff0000;
+    position: absolute;
+    border-radius: 100px;
+    border-top: 0;
+    border-right: 0;
+    border-radius: 100px 0 100px 100px;
+    margin-top: 23px;
+    margin-left: 24px;
+}
+
+.circle:hover {
+    animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+    to {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+
+}
+
+.clear:hover {
+    animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+    to {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgb(68, 23, 6);
+    position: absolute;
+    border-radius: 100px;
+    margin-left: 32px;
+    margin-top: 30px;
+    background-image: url(WhatsApp\ Image\ 2025-02-06\ at\ 10.32.34.jpeg);
+    background-size: cover;
+    background-position: center;
+}
